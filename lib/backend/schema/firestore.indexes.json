@@ -1,0 +1,50 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "campaign",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "campaign_creator",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "campaign_end_date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "campaign",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "campaign_responders",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "campaign_end_date",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "campaign_responses",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "campaign_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "response_published",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "response_date",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ]
+}

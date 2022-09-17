@@ -1,0 +1,4 @@
+NSCameraUsageDescription = "This would be used to enable you to record a memory";
+NSMicrophoneUsageDescription = "This would be used to enable you to record a memory";
+NSPhotoLibraryUsageDescription = "Access specific photos related to your memory";
+PermissionGroupNotification = "This would be used to notify of a pending memory";
